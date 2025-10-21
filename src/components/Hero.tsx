@@ -1,20 +1,15 @@
 import { Button } from "@/components/ui/button";
 import { Shield, MapPin, Users } from "lucide-react";
 import heroImage from "@/assets/hero-image.jpg";
-
 const Hero = () => {
-  return (
-    <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
+  return <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
       {/* Background with gradient overlay */}
       <div className="absolute inset-0 gradient-hero"></div>
-      <div
-        className="absolute inset-0 opacity-20"
-        style={{
-          backgroundImage: `url(${heroImage})`,
-          backgroundSize: "cover",
-          backgroundPosition: "center",
-        }}
-      ></div>
+      <div className="absolute inset-0 opacity-20" style={{
+      backgroundImage: `url(${heroImage})`,
+      backgroundSize: "cover",
+      backgroundPosition: "center"
+    }}></div>
 
       <div className="container mx-auto px-4 relative z-10 py-32">
         <div className="max-w-4xl mx-auto text-center space-y-8 animate-fade-in">
@@ -28,7 +23,7 @@ const Hero = () => {
           <h1 className="font-heading font-bold text-5xl md:text-7xl leading-tight">
             Because Every Journey
             <br />
-            <span className="bg-gradient-primary bg-clip-text text-transparent">
+            <span className="bg-gradient-primary bg-clip-text text-slate-700">
               Deserves Safety
             </span>
           </h1>
@@ -40,17 +35,10 @@ const Hero = () => {
 
           {/* CTA Buttons */}
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center pt-4">
-            <Button
-              size="lg"
-              className="bg-gradient-primary text-primary-foreground hover:opacity-90 transition-smooth font-semibold text-lg px-8 py-6 glow-primary"
-            >
+            <Button size="lg" className="bg-gradient-primary text-primary-foreground hover:opacity-90 transition-smooth font-semibold text-lg px-8 py-6 glow-primary">
               Download on Play Store
             </Button>
-            <Button
-              size="lg"
-              variant="outline"
-              className="border-2 border-primary text-primary hover:bg-primary hover:text-primary-foreground transition-smooth font-semibold text-lg px-8 py-6"
-            >
+            <Button size="lg" variant="outline" className="border-2 border-primary text-primary hover:bg-primary hover:text-primary-foreground transition-smooth font-semibold text-lg px-8 py-6">
               Get on App Store
             </Button>
           </div>
@@ -90,9 +78,9 @@ const Hero = () => {
 
       {/* Decorative Elements */}
       <div className="absolute top-20 right-10 w-72 h-72 bg-primary/20 rounded-full blur-3xl animate-float"></div>
-      <div className="absolute bottom-20 left-10 w-96 h-96 bg-secondary/20 rounded-full blur-3xl animate-float" style={{ animationDelay: "1s" }}></div>
-    </section>
-  );
+      <div className="absolute bottom-20 left-10 w-96 h-96 bg-secondary/20 rounded-full blur-3xl animate-float" style={{
+      animationDelay: "1s"
+    }}></div>
+    </section>;
 };
-
 export default Hero;

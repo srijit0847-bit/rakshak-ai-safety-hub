@@ -1,35 +1,28 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { AlertTriangle, Lightbulb, Users, MapPin } from "lucide-react";
-
 const Community = () => {
-  const recentReports = [
-    {
-      type: "Broken streetlight",
-      location: "MG Road, Bangalore",
-      time: "2 hours ago",
-      icon: Lightbulb,
-    },
-    {
-      type: "Unsafe crowd",
-      location: "Connaught Place, Delhi",
-      time: "4 hours ago",
-      icon: AlertTriangle,
-    },
-    {
-      type: "Empty area",
-      location: "Koramangala, Bangalore",
-      time: "6 hours ago",
-      icon: MapPin,
-    },
-  ];
-
-  return (
-    <section id="community" className="py-24 bg-muted/30">
+  const recentReports = [{
+    type: "Broken streetlight",
+    location: "MG Road, Bangalore",
+    time: "2 hours ago",
+    icon: Lightbulb
+  }, {
+    type: "Unsafe crowd",
+    location: "Connaught Place, Delhi",
+    time: "4 hours ago",
+    icon: AlertTriangle
+  }, {
+    type: "Empty area",
+    location: "Koramangala, Bangalore",
+    time: "6 hours ago",
+    icon: MapPin
+  }];
+  return <section id="community" className="py-24 bg-muted/30">
       <div className="container mx-auto px-4">
         <div className="max-w-6xl mx-auto">
           <div className="text-center max-w-3xl mx-auto mb-16 space-y-4">
-            <h2 className="font-heading font-bold text-4xl md:text-5xl">
+            <h2 className="font-heading font-bold text-4xl text-purple-900 md:text-5xl">
               Safety Through{" "}
               <span className="bg-gradient-primary bg-clip-text text-transparent">
                 Community Power
@@ -77,24 +70,15 @@ const Community = () => {
                   <h3 className="font-heading font-bold text-2xl">Report Safety Concern</h3>
                 </div>
                 <div className="space-y-3">
-                  <Button
-                    variant="outline"
-                    className="w-full justify-start text-left hover:border-primary transition-smooth"
-                  >
+                  <Button variant="outline" className="w-full justify-start text-left hover:border-primary transition-smooth">
                     <Lightbulb className="w-5 h-5 mr-3" />
                     Broken Streetlight
                   </Button>
-                  <Button
-                    variant="outline"
-                    className="w-full justify-start text-left hover:border-primary transition-smooth"
-                  >
+                  <Button variant="outline" className="w-full justify-start text-left hover:border-primary transition-smooth">
                     <AlertTriangle className="w-5 h-5 mr-3" />
                     Unsafe Crowd
                   </Button>
-                  <Button
-                    variant="outline"
-                    className="w-full justify-start text-left hover:border-primary transition-smooth"
-                  >
+                  <Button variant="outline" className="w-full justify-start text-left hover:border-primary transition-smooth">
                     <MapPin className="w-5 h-5 mr-3" />
                     Empty / Isolated Area
                   </Button>
@@ -110,8 +94,7 @@ const Community = () => {
           <div className="space-y-4">
             <h3 className="font-heading font-bold text-2xl">Recent Community Reports</h3>
             <div className="grid md:grid-cols-3 gap-4">
-              {recentReports.map((report, index) => (
-                <Card key={index} className="hover:shadow-lg transition-smooth">
+              {recentReports.map((report, index) => <Card key={index} className="hover:shadow-lg transition-smooth">
                   <CardContent className="p-6 space-y-3">
                     <div className="flex items-start gap-3">
                       <div className="w-10 h-10 rounded-full bg-secondary/10 flex items-center justify-center flex-shrink-0">
@@ -124,14 +107,11 @@ const Community = () => {
                       </div>
                     </div>
                   </CardContent>
-                </Card>
-              ))}
+                </Card>)}
             </div>
           </div>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default Community;

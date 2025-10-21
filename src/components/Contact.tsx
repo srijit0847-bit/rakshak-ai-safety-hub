@@ -5,31 +5,36 @@ import { Textarea } from "@/components/ui/textarea";
 import { Mail, MapPin, Phone } from "lucide-react";
 import { useToast } from "@/hooks/use-toast";
 import { useState } from "react";
-
 const Contact = () => {
-  const { toast } = useToast();
+  const {
+    toast
+  } = useToast();
   const [formData, setFormData] = useState({
     name: "",
     email: "",
     subject: "",
-    message: "",
+    message: ""
   });
-
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     toast({
       title: "Thank you for reaching out!",
-      description: "Our team will get back to you soon.",
+      description: "Our team will get back to you soon."
     });
-    setFormData({ name: "", email: "", subject: "", message: "" });
+    setFormData({
+      name: "",
+      email: "",
+      subject: "",
+      message: ""
+    });
   };
-
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
-    setFormData({ ...formData, [e.target.name]: e.target.value });
+    setFormData({
+      ...formData,
+      [e.target.name]: e.target.value
+    });
   };
-
-  return (
-    <section id="contact" className="py-24 bg-background">
+  return <section id="contact" className="py-24 bg-background">
       <div className="container mx-auto px-4">
         <div className="max-w-5xl mx-auto">
           <div className="text-center mb-16 space-y-4">
@@ -82,62 +87,28 @@ const Contact = () => {
                     <label htmlFor="name" className="text-sm font-medium">
                       Name
                     </label>
-                    <Input
-                      id="name"
-                      name="name"
-                      placeholder="Your name"
-                      value={formData.name}
-                      onChange={handleChange}
-                      required
-                    />
+                    <Input id="name" name="name" placeholder="Your name" value={formData.name} onChange={handleChange} required />
                   </div>
                   <div className="space-y-2">
                     <label htmlFor="email" className="text-sm font-medium">
                       Email
                     </label>
-                    <Input
-                      id="email"
-                      name="email"
-                      type="email"
-                      placeholder="your@email.com"
-                      value={formData.email}
-                      onChange={handleChange}
-                      required
-                    />
+                    <Input id="email" name="email" type="email" placeholder="your@email.com" value={formData.email} onChange={handleChange} required />
                   </div>
                 </div>
                 <div className="space-y-2">
                   <label htmlFor="subject" className="text-sm font-medium">
                     Subject
                   </label>
-                  <Input
-                    id="subject"
-                    name="subject"
-                    placeholder="How can we help?"
-                    value={formData.subject}
-                    onChange={handleChange}
-                    required
-                  />
+                  <Input id="subject" name="subject" placeholder="How can we help?" value={formData.subject} onChange={handleChange} required />
                 </div>
                 <div className="space-y-2">
                   <label htmlFor="message" className="text-sm font-medium">
                     Message
                   </label>
-                  <Textarea
-                    id="message"
-                    name="message"
-                    placeholder="Tell us more..."
-                    rows={5}
-                    value={formData.message}
-                    onChange={handleChange}
-                    required
-                  />
+                  <Textarea id="message" name="message" placeholder="Tell us more..." rows={5} value={formData.message} onChange={handleChange} required />
                 </div>
-                <Button
-                  type="submit"
-                  size="lg"
-                  className="w-full bg-gradient-primary text-primary-foreground font-semibold"
-                >
+                <Button type="submit" size="lg" className="w-full bg-gradient-primary font-semibold text-slate-50 bg-[#213a86]">
                   Send Message
                 </Button>
               </form>
@@ -145,8 +116,6 @@ const Contact = () => {
           </Card>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default Contact;

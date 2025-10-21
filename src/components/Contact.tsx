@@ -38,9 +38,9 @@ const Contact = () => {
       <div className="container mx-auto px-4">
         <div className="max-w-5xl mx-auto">
           <div className="text-center mb-16 space-y-4">
-            <h2 className="font-heading font-bold text-4xl md:text-5xl">
+            <h2 className="font-heading font-bold text-4xl md:text-5xl text-slate-700">
               Get in{" "}
-              <span className="bg-gradient-primary bg-clip-text text-transparent">
+              <span className="bg-gradient-primary bg-clip-text text-gray-800">
                 Touch
               </span>
             </h2>

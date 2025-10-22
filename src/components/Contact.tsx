@@ -40,7 +40,7 @@ const Contact = () => {
           <div className="text-center mb-16 space-y-4">
             <h2 className="font-heading font-bold text-4xl md:text-5xl text-slate-700">
               Get in{" "}
-              <span className="bg-gradient-primary bg-clip-text text-gray-800"> Touch</span>
+              <span className="bg-gradient-primary bg-clip-text text-gray-800">Touch with us</span>
             </h2>
             <p className="text-lg text-muted-foreground">
               Questions, feedback, or partnership inquiries? We're here to help make your journey safer.

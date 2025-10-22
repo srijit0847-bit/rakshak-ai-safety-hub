@@ -32,22 +32,22 @@ const CTA = () => {
             </Button>
           </div>
 
-          <div className="pt-8 flex flex-wrap justify-center gap-8 text-center">
+          <div className="pt-8 flex flex-wrap justify-center gap-8 text-center bg-white">
             <div>
-              <div className="font-heading font-bold text-4xl bg-gray-500 rounded-md">45K+</div>
-              <div className="text-primary-foreground/80">Active Users</div>
+              <div className="font-heading font-bold text-4xl rounded-md bg-slate-700">45K+</div>
+              <div className="text-primary-foreground/80 bg-slate-700">Active Users</div>
             </div>
             <div>
-              <div className="font-heading font-bold text-4xl bg-zinc-500">70+</div>
-              <div className="text-primary-foreground/80">Cities</div>
+              <div className="font-heading font-bold text-4xl bg-slate-500">70+</div>
+              <div className="text-primary-foreground/80 bg-slate-500">Cities</div>
             </div>
             <div>
               <div className="font-heading font-bold text-4xl bg-slate-700">24/7</div>
-              <div className="text-primary-foreground/80">AI Protection</div>
+              <div className="text-primary-foreground/80 bg-gray-700">AI Protection</div>
             </div>
             <div>
-              <div className="font-heading font-bold text-4xl bg-slate-800">4.8★</div>
-              <div className="text-primary-foreground/80">User Rating</div>
+              <div className="font-heading font-bold text-4xl bg-slate-500">4.8★</div>
+              <div className="text-primary-foreground/80 bg-slate-500">User Rating</div>
             </div>
           </div>
         </div>

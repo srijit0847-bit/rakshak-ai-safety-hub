@@ -22,7 +22,7 @@ const Community = () => {
       <div className="container mx-auto px-4">
         <div className="max-w-6xl mx-auto">
           <div className="text-center max-w-3xl mx-auto mb-16 space-y-4">
-            <h2 className="font-heading font-bold text-4xl text-purple-900 md:text-5xl">
+            <h2 className="font-heading font-bold text-4xl text-purple-950 md:text-5xl">
               Together, We make{" "}
               <span className="bg-gradient-primary bg-clip-text text-purple-800">
                 every route safer

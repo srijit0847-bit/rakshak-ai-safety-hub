@@ -8,11 +8,11 @@ const CTA = () => {
       </div>
 
       <div className="container mx-auto px-4 relative z-10">
-        <div className="max-w-4xl mx-auto text-center space-y-8 bg-fuchsia-300">
+        <div className="max-w-4xl mx-auto text-center space-y-8 bg-transparent">
           <h2 className="font-heading text-4xl font-bold text-slate-500 md:text-5xl">
             Take Safety Into Your Own Hands
           </h2>
-          <p className="text-xl md:text-2xl opacity-90 max-w-2xl mx-auto">
+          <p className="text-xl md:text-2xl opacity-90 max-w-2xl mx-auto text-slate-600">
             Download Rakshak and travel confidently, anytime, anywhere. Join thousands of women who've already made their journeys safer.
           </p>
 
@@ -34,7 +34,7 @@ const CTA = () => {
 
           <div className="pt-8 flex flex-wrap justify-center gap-8 text-center">
             <div>
-              <div className="font-heading font-bold text-4xl bg-gray-500">45K+</div>
+              <div className="font-heading font-bold text-4xl bg-gray-500 rounded-md">45K+</div>
               <div className="text-primary-foreground/80">Active Users</div>
             </div>
             <div>

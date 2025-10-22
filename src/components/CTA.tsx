@@ -8,7 +8,7 @@ const CTA = () => {
       </div>
 
       <div className="container mx-auto px-4 relative z-10">
-        <div className="max-w-4xl mx-auto text-center space-y-8 bg-fuchsia-300">
+        <div className="max-w-4xl mx-auto text-center space-y-8 bg-slate-50">
           <h2 className="font-heading text-4xl font-bold text-slate-500 md:text-5xl">
             Take Safety Into Your Own Hands
           </h2>
@@ -34,19 +34,19 @@ const CTA = () => {
 
           <div className="pt-8 flex flex-wrap justify-center gap-8 text-center">
             <div>
-              <div className="font-heading font-bold text-4xl">45K+</div>
+              <div className="font-heading font-bold text-4xl bg-gray-900">45K+</div>
               <div className="text-primary-foreground/80">Active Users</div>
             </div>
             <div>
-              <div className="font-heading font-bold text-4xl">70+</div>
+              <div className="font-heading font-bold text-4xl bg-gray-900">70+</div>
               <div className="text-primary-foreground/80">Cities</div>
             </div>
             <div>
-              <div className="font-heading font-bold text-4xl">24/7</div>
+              <div className="font-heading font-bold text-4xl bg-slate-900">24/7</div>
               <div className="text-primary-foreground/80">AI Protection</div>
             </div>
             <div>
-              <div className="font-heading font-bold text-4xl">4.8★</div>
+              <div className="font-heading font-bold text-4xl bg-slate-900">4.8★</div>
               <div className="text-primary-foreground/80">User Rating</div>
             </div>
           </div>

@@ -1,16 +1,14 @@
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { AlertCircle, Phone, MapPin, Volume2 } from "lucide-react";
-
 const Emergency = () => {
-  return (
-    <section className="py-24 bg-background">
+  return <section className="py-24 bg-background">
       <div className="container mx-auto px-4">
         <div className="max-w-4xl mx-auto">
           <div className="text-center mb-16 space-y-4">
             <h2 className="font-heading font-bold text-4xl md:text-5xl">
               Instant{" "}
-              <span className="bg-gradient-primary bg-clip-text text-transparent">
+              <span className="bg-gradient-primary bg-clip-text text-zinc-800">
                 Emergency Response
               </span>
             </h2>
@@ -29,10 +27,7 @@ const Emergency = () => {
                 <p className="text-muted-foreground">
                   Press and hold the SOS button for 3 seconds to trigger emergency alert with your live location.
                 </p>
-                <Button
-                  size="lg"
-                  className="w-full bg-destructive hover:bg-destructive/90 text-destructive-foreground font-semibold"
-                >
+                <Button size="lg" className="w-full bg-destructive hover:bg-destructive/90 text-destructive-foreground font-semibold">
                   <AlertCircle className="w-5 h-5 mr-2" />
                   Demo SOS Button
                 </Button>
@@ -41,18 +36,16 @@ const Emergency = () => {
 
             <Card className="border-2 border-primary/30 hover:border-primary transition-smooth">
               <CardContent className="p-8 text-center space-y-6">
-                <div className="w-32 h-32 mx-auto rounded-full bg-primary/10 flex items-center justify-center animate-pulse-glow" style={{ animationDelay: "0.5s" }}>
+                <div className="w-32 h-32 mx-auto rounded-full bg-primary/10 flex items-center justify-center animate-pulse-glow" style={{
+                animationDelay: "0.5s"
+              }}>
                   <Volume2 className="w-16 h-16 text-primary" />
                 </div>
                 <h3 className="font-heading font-bold text-2xl">Voice Activation</h3>
                 <p className="text-muted-foreground">
                   Simply say "Help me" or hold volume buttons to trigger silent SOS without touching your phone.
                 </p>
-                <Button
-                  size="lg"
-                  variant="outline"
-                  className="w-full border-2 border-primary text-primary hover:bg-primary hover:text-primary-foreground font-semibold"
-                >
+                <Button size="lg" variant="outline" className="w-full border-2 border-primary text-primary hover:bg-primary hover:text-primary-foreground font-semibold">
                   <Volume2 className="w-5 h-5 mr-2" />
                   Test Voice Command
                 </Button>
@@ -138,8 +131,6 @@ const Emergency = () => {
           </Card>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default Emergency;

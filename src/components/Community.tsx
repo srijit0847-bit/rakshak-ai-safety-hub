@@ -24,7 +24,7 @@ const Community = () => {
           <div className="text-center max-w-3xl mx-auto mb-16 space-y-4">
             <h2 className="font-heading font-bold text-4xl text-purple-900 md:text-5xl">
               Safety Through{" "}
-              <span className="bg-gradient-primary bg-clip-text text-transparent">
+              <span className="bg-gradient-primary bg-clip-text text-purple-800">
                 Community Power
               </span>
             </h2>

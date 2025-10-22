@@ -38,7 +38,7 @@ const CTA = () => {
               <div className="text-primary-foreground/80">Active Users</div>
             </div>
             <div>
-              <div className="font-heading font-bold text-4xl bg-slate-600">70+</div>
+              <div className="font-heading font-bold text-4xl bg-zinc-500">70+</div>
               <div className="text-primary-foreground/80">Cities</div>
             </div>
             <div>

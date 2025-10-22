@@ -8,7 +8,7 @@ const CTA = () => {
       </div>
 
       <div className="container mx-auto px-4 relative z-10">
-        <div className="max-w-4xl mx-auto text-center space-y-8">
+        <div className="max-w-4xl mx-auto text-center space-y-8 bg-fuchsia-300">
           <h2 className="font-heading text-4xl font-bold text-slate-500 md:text-5xl">
             Take Safety Into Your Own Hands
           </h2>

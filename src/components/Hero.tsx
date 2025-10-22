@@ -35,7 +35,7 @@ const Hero = () => {
 
           {/* CTA Buttons */}
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center pt-4">
-            <Button size="lg" className="bg-gradient-primary text-primary-foreground hover:opacity-90 transition-smooth font-semibold text-lg px-8 py-6 glow-primary">
+            <Button size="lg" className="bg-gradient-primary hover:opacity-90 transition-smooth font-semibold text-lg px-8 py-6 glow-primary bg-slate-100 text-violet-700">
               Download on Play Store
             </Button>
             <Button size="lg" variant="outline" className="border-2 border-primary text-primary hover:bg-primary hover:text-primary-foreground transition-smooth font-semibold text-lg px-8 py-6">

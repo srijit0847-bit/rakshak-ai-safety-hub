@@ -66,7 +66,7 @@ const Navbar = () => {
             >
               Contact
             </button>
-            <Button className="bg-gradient-primary text-primary-foreground hover:opacity-90 transition-smooth font-semibold">
+            <Button className="bg-primary text-primary-foreground hover:bg-primary/90 transition-smooth font-semibold">
               Download App
             </Button>
           </div>
@@ -107,7 +107,7 @@ const Navbar = () => {
             >
               Contact
             </button>
-            <Button className="w-full bg-gradient-primary text-primary-foreground font-semibold">
+            <Button className="w-full bg-primary text-primary-foreground hover:bg-primary/90 font-semibold">
               Download App
             </Button>
           </div>

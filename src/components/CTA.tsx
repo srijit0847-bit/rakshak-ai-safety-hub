@@ -34,7 +34,7 @@ const CTA = () => {
 
           <div className="pt-8 flex flex-wrap justify-center gap-8 text-center bg-white">
             <div>
-              <div className="font-heading font-bold text-4xl rounded-md bg-slate-700">45K+</div>
+              <div className="font-heading font-bold text-4xl bg-slate-700 rounded-none">45K+</div>
               <div className="text-primary-foreground/80 bg-slate-700">Active Users</div>
             </div>
             <div>

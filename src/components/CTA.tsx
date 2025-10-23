@@ -17,7 +17,7 @@ const CTA = () => {
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center pt-4">
-            <Button size="lg" className="bg-primary-foreground text-primary hover:bg-primary-foreground/90 font-semibold text-lg px-8 py-6 shadow-xl">
+            <Button size="lg" className="bg-primary-foreground text-primary hover:bg-primary-foreground/90 px-8 py-6 shadow-xl text-lg font-semibold">
               <Download className="w-5 h-5 mr-2" />
               Download App
             </Button>
@@ -26,7 +26,7 @@ const CTA = () => {
             element?.scrollIntoView({
               behavior: "smooth"
             });
-          }} className="border-2 border-primary-foreground font-semibold text-lg px-8 py-6 text-violet-500 bg-transparent">
+          }} className="border-2 border-primary-foreground text-lg px-8 py-6 text-violet-500 bg-transparent text-center font-extrabold">
               <Users className="w-5 h-5 mr-2" />
               Join the Safety Movement
             </Button>
